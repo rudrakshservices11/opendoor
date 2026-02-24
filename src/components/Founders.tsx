@@ -1,6 +1,8 @@
 import { Building2, Landmark } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Founders = () => {
+  const { ref, isVisible } = useScrollReveal();
   const founders = [
     {
       name: "Anuj Tomar",
@@ -20,8 +22,8 @@ const Founders = () => {
 
   return (
     <section id="founders" className="py-24 section-dark">
-      <div className="container mx-auto px-6 max-w-5xl">
-        <div className="text-center mb-16">
+      <div ref={ref} className="container mx-auto px-6 max-w-5xl">
+        <div className={`reveal ${isVisible ? "visible" : ""} text-center mb-16`}>
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">Meet the Founders</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold">
             Built on Corporate Discipline &{" "}
@@ -31,7 +33,11 @@ const Founders = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {founders.map((founder, i) => (
-            <div key={i} className="bg-card border border-border rounded-xl p-8 hover:border-primary/40 transition-all duration-300 group">
+            <div
+              key={i}
+              className={`${i === 0 ? "reveal-left" : "reveal-right"} ${isVisible ? "visible" : ""} bg-card border border-border rounded-xl p-8 hover:border-primary/40 transition-all duration-300 group`}
+              style={{ transitionDelay: `${0.2 + i * 0.15}s` }}
+            >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                   {founder.icon}
