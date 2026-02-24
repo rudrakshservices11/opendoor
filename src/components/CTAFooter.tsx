@@ -1,14 +1,17 @@
 import { Phone } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const CTASection = () => {
+  const { ref, isVisible } = useScrollReveal();
+
   return (
     <section id="contact" className="py-24 section-darker relative overflow-hidden">
       {/* Subtle gold glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
 
-      <div className="container mx-auto px-6 max-w-4xl relative z-10">
-        <div className="text-center">
+      <div ref={ref} className="container mx-auto px-6 max-w-4xl relative z-10">
+        <div className={`reveal ${isVisible ? "visible" : ""} text-center`}>
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
             Make Your Next Property Decision with{" "}
             <span className="gold-text">Strategy & Alignment</span>

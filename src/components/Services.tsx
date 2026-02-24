@@ -1,4 +1,5 @@
 import { Home, Building, Key, Compass } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const services = [
   {
@@ -25,10 +26,12 @@ const services = [
 ];
 
 const Services = () => {
+  const { ref, isVisible } = useScrollReveal();
+
   return (
     <section id="services" className="py-24 section-darker">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="text-center mb-16">
+      <div ref={ref} className="container mx-auto px-6 max-w-6xl">
+        <div className={`reveal ${isVisible ? "visible" : ""} text-center mb-16`}>
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">Our Services</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold">
             Comprehensive Real Estate &{" "}
@@ -38,7 +41,11 @@ const Services = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => (
-            <div key={i} className="bg-card border border-border rounded-xl p-6 hover:border-primary/40 transition-all duration-300 group relative">
+            <div
+              key={i}
+              className={`reveal-scale ${isVisible ? "visible" : ""} bg-card border border-border rounded-xl p-6 hover:border-primary/40 transition-all duration-300 group relative`}
+              style={{ transitionDelay: `${0.1 + i * 0.1}s` }}
+            >
               {service.badge && (
                 <span className="absolute -top-3 right-4 gold-gradient text-primary-foreground text-[10px] font-body font-bold tracking-wider uppercase px-3 py-1 rounded-full">
                   {service.badge}
@@ -60,7 +67,7 @@ const Services = () => {
           ))}
         </div>
 
-        <p className="text-center text-muted-foreground font-body text-sm mt-10 italic">
+        <p className={`reveal ${isVisible ? "visible" : ""} text-center text-muted-foreground font-body text-sm mt-10 italic`} style={{ transitionDelay: "0.6s" }}>
           Every client has the option to include Vastu screening before finalising a transaction.
         </p>
       </div>

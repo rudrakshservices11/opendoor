@@ -1,6 +1,8 @@
 import { CheckCircle } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const WhyDifferent = () => {
+  const { ref, isVisible } = useScrollReveal();
   const points = [
     "Structured evaluation before recommendation",
     "Financial feasibility assessment before commitment",
@@ -10,9 +12,9 @@ const WhyDifferent = () => {
 
   return (
     <section className="py-24 section-darker">
-      <div className="container mx-auto px-6 max-w-5xl">
+      <div ref={ref} className={`container mx-auto px-6 max-w-5xl`}>
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
+          <div className={`reveal-left ${isVisible ? "visible" : ""}`}>
             <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">Why We Are Different</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
               Not Just Property Dealers.{" "}
@@ -28,12 +30,16 @@ const WhyDifferent = () => {
 
           <div className="space-y-5">
             {points.map((point, i) => (
-              <div key={i} className="flex items-start gap-4 bg-card p-5 rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <div
+                key={i}
+                className={`reveal ${isVisible ? "visible" : ""} flex items-start gap-4 bg-card p-5 rounded-lg border border-border hover:border-primary/50 transition-colors`}
+                style={{ transitionDelay: `${i * 0.1}s` }}
+              >
                 <CheckCircle className="text-primary mt-0.5 flex-shrink-0" size={20} />
                 <p className="font-body text-secondary-foreground">{point}</p>
               </div>
             ))}
-            <p className="text-muted-foreground font-body text-sm italic mt-6 pl-2">
+            <p className={`reveal ${isVisible ? "visible" : ""} text-muted-foreground font-body text-sm italic mt-6 pl-2`} style={{ transitionDelay: "0.5s" }}>
               When you work with us, you don't just buy property — you make a calculated move.
             </p>
           </div>
