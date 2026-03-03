@@ -21,14 +21,14 @@ const CTASection = () => {
             Choose structured advisory backed by corporate discipline, banking expertise, and scientific Vastu insight.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <a href="#" className="gold-gradient text-primary-foreground px-8 py-4 rounded-md font-body font-semibold hover:opacity-90 transition-opacity">
+          <div className="flex flex-col gap-4 justify-center items-center mb-16">
+            <a href="#" className="w-full sm:w-auto gold-gradient text-primary-foreground px-8 py-4 rounded-md font-body font-semibold text-center hover:opacity-90 transition-opacity">
               Book Your Strategy Call Today
             </a>
-            <a href="#" className="border-2 border-primary text-primary px-8 py-4 rounded-md font-body font-semibold hover:bg-primary hover:text-primary-foreground transition-colors">
+            <a href="#" className="w-full sm:w-auto border-2 border-primary text-primary px-8 py-4 rounded-md font-body font-semibold text-center hover:bg-primary hover:text-primary-foreground transition-colors">
               Schedule a Vastu Consultation
             </a>
-            <a href="#" className="border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold hover:border-primary hover:text-primary transition-colors inline-flex items-center justify-center gap-2">
+            <a href="#" className="w-full sm:w-auto border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold hover:border-primary hover:text-primary transition-colors inline-flex items-center justify-center gap-2">
               <Phone size={16} />
               Speak to an Advisor
             </a>
