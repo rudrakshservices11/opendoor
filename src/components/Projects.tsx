@@ -8,7 +8,7 @@ const projects = [
     type: "Luxury Apartments",
     config: "3 & 4 BHK",
     highlight: "Neighbouring 1,000 acres of reserved greens with 27 water bodies & a grand waterfall entrance.",
-    priceRange: "₹3.25 Cr onwards",
+    
     icon: Building2,
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     type: "Integrated Township",
     config: "3 & 4 BHK",
     highlight: "A 112-acre integrated township by Vatika Group with premium amenities, lush landscapes & excellent connectivity.",
-    priceRange: "₹1.10 Cr – ₹2.08 Cr",
+    
     icon: Home,
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     type: "Premium Residences",
     config: "3 & 4 BHK",
     highlight: "A nature-inspired residential project offering spacious floor plans with modern amenities on Dwarka Expressway.",
-    priceRange: "₹1.50 Cr onwards",
+    
     icon: TrendingUp,
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     type: "Luxury & Affordable",
     config: "2, 3 & 4 BHK",
     highlight: "One of Gurgaon's fastest-growing developers offering projects across Dwarka Expressway & SPR with world-class design.",
-    priceRange: "₹75 L – ₹3 Cr",
+    
     icon: Building2,
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     type: "Ultra-Luxury Living",
     config: "3 & 4 BHK",
     highlight: "Known for premium developments along Golf Course Extension Road with resort-style amenities & prime appreciation potential.",
-    priceRange: "₹2 Cr onwards",
+    
     icon: TrendingUp,
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     type: "High-Rise Living",
     config: "2, 3 & 4 BHK",
     highlight: "Well-established Gurgaon developer delivering quality high-rise residences with strategic locations near NH-8 & Dwarka Expressway.",
-    priceRange: "₹90 L onwards",
+    
     icon: Home,
   },
 ];
@@ -108,14 +108,10 @@ const Projects = () => {
                   {project.highlight}
                 </p>
 
-                <div className="border-t border-border pt-4 flex items-center justify-between">
+                <div className="border-t border-border pt-4">
                   <div>
                     <p className="text-xs text-muted-foreground font-body">Config</p>
                     <p className="text-sm font-body font-semibold text-foreground">{project.config}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-xs text-muted-foreground font-body">Starting</p>
-                    <p className="text-sm font-heading font-bold text-primary">{project.priceRange}</p>
                   </div>
                 </div>
               </div>
