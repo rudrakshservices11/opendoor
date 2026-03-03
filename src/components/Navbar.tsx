@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 text-sm font-body font-medium text-secondary-foreground">
           <a href="#services" className="hover:text-primary transition-colors">Services</a>
           <a href="#founders" className="hover:text-primary transition-colors">About Us</a>
-          <a href="#process" className="hover:text-primary transition-colors">Process</a>
+          <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
           <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
           <a href="#contact" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-semibold hover:bg-gold-light transition-colors">
             <Phone size={14} />
