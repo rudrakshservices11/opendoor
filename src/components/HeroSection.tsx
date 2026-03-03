@@ -34,7 +34,7 @@ const HeroSection = () => {
           <a href="#contact" className="border-2 border-primary text-primary px-8 py-4 rounded-md font-body font-semibold text-base hover:bg-primary hover:text-primary-foreground transition-colors">
             Get Vastu Assessment
           </a>
-          <a href="#services" className="border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold text-base hover:border-primary hover:text-primary transition-colors">
+          <a href="#projects" className="border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold text-base hover:border-primary hover:text-primary transition-colors">
             Explore Properties
           </a>
         </div>
