@@ -6,8 +6,9 @@ const WhyDifferent = () => {
   const points = [
     "Structured evaluation before recommendation",
     "Financial feasibility assessment before commitment",
-    "Vastu alignment before finalisation",
+    "Basic Vastu Assessment before finalisation",
     "Long-term investment perspective",
+    "Financing from Nationalised and Private banks",
   ];
 
   return (

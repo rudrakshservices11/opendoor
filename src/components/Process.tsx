@@ -6,6 +6,7 @@ const steps = [
   { num: "03", title: "Market-Based Property Shortlisting" },
   { num: "04", title: "Vastu Alignment Evaluation" },
   { num: "05", title: "Negotiation & Closure Assistance" },
+  { num: "06", title: "Market Based Competitive Pricing" },
 ];
 
 const Process = () => {
