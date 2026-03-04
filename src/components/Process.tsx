@@ -2,7 +2,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const steps = [
   { num: "01", title: "Requirement & Goal Analysis" },
-  { num: "02", title: "Financial Feasibility Review" },
+  { num: "02", title: "Market Based Competitive Pricing" },
   { num: "03", title: "Market-Based Property Shortlisting" },
   { num: "04", title: "Vastu Alignment Evaluation" },
   { num: "05", title: "Negotiation & Closure Assistance" },
