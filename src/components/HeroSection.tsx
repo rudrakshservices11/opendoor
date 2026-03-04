@@ -16,7 +16,7 @@ const HeroSection = () => {
         </p>
 
         <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-up">
-          Strategic Real Estate Advisory in Gurgaon with{" "}
+          360° Real Estate Advisory in Gurgaon with{" "}
           <span className="gold-text">Scientific Vastu Alignment</span>
         </h1>
 
