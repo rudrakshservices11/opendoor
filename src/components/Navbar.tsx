@@ -19,7 +19,7 @@ const Navbar = () => {
           <img src={logo} alt="OpenDoor 360" className="h-10 w-10 sm:h-12 sm:w-12 rounded-md object-cover" />
           <div>
             <span className="font-heading text-lg sm:text-xl font-bold text-primary">OPENDOOR 360</span>
-            <p className="text-[10px] tracking-[0.3em] text-muted-foreground uppercase">Real Estate</p>
+            <p className="text-[10px] tracking-[0.3em] text-muted-foreground uppercase">Property Consultants</p>
           </div>
         </div>
 
