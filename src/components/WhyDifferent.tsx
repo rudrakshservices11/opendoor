@@ -5,10 +5,9 @@ const WhyDifferent = () => {
   const { ref, isVisible } = useScrollReveal();
   const points = [
     "Structured evaluation before recommendation",
-    "Financial feasibility assessment before commitment",
+    "Financing from Nationalised and Private banks",
     "Basic Vastu Assessment before finalisation",
     "Long-term investment perspective",
-    "Financing from Nationalised and Private banks",
   ];
 
   return (
@@ -18,7 +17,7 @@ const WhyDifferent = () => {
           <div className={`reveal-left ${isVisible ? "visible" : ""}`}>
             <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">Why We Are Different</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-              Not Just Property Dealers.{" "}
+              Not Just Property Consultants.{" "}
               <span className="gold-text">We Are Decision Advisors.</span>
             </h2>
             <p className="text-muted-foreground font-body leading-relaxed mb-4">
