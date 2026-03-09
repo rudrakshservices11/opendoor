@@ -48,7 +48,7 @@ const projects = [
     icon: TrendingUp,
   },
   {
-    name: "Mapsko",
+    name: "Multiple Sectors",
     location: "Sector 37D, Gurgaon",
     type: "High-Rise Living",
     config: "2, 3 & 4 BHK",
