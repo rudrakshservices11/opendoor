@@ -28,7 +28,7 @@ const Navbar = () => {
           {links.map((l) => (
             <a key={l.href} href={l.href} className="hover:text-primary transition-colors">{l.label}</a>
           ))}
-          <a href="#contact" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-semibold hover:bg-gold-light transition-colors">
+          <a href="tel:+919871015096" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-semibold hover:bg-gold-light transition-colors">
             <Phone size={14} />
             Contact Us
           </a>
