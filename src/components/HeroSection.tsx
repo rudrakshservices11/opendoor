@@ -28,10 +28,10 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-          <a href="#contact" className="gold-gradient text-primary-foreground px-8 py-4 rounded-md font-body font-semibold text-base hover:opacity-90 transition-opacity">
+          <a href="tel:+919871015096" className="gold-gradient text-primary-foreground px-8 py-4 rounded-md font-body font-semibold text-base hover:opacity-90 transition-opacity">
             Book a Free Consultation
           </a>
-          <a href="#contact" className="border-2 border-primary text-primary px-8 py-4 rounded-md font-body font-semibold text-base hover:bg-primary hover:text-primary-foreground transition-colors">
+          <a href="tel:+919871015096" className="border-2 border-primary text-primary px-8 py-4 rounded-md font-body font-semibold text-base hover:bg-primary hover:text-primary-foreground transition-colors">
             Get Vastu Assessment
           </a>
           <a href="#projects" className="border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold text-base hover:border-primary hover:text-primary transition-colors">

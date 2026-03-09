@@ -59,7 +59,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#contact"
+              href="tel:+919871015096"
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-md font-body font-semibold text-sm mt-2"
               onClick={() => setOpen(false)}
             >
