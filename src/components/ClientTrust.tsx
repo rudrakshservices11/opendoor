@@ -8,9 +8,10 @@ const ClientTrust = () => {
   const reasons = [
     "Transparent advisory model",
     "No pressure selling",
-    "Financially structured guidance",
+    "Curated property options",
     "Vastu-integrated property decisions",
     "Strong negotiation representation",
+    "End-to-end transaction support",
   ];
 
   const resultItems = [
