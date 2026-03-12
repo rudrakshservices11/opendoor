@@ -48,8 +48,8 @@ const projects = [
     icon: TrendingUp,
   },
   {
-    name: "Multiple Sectors",
-    location: "Sector 37D, Gurgaon",
+    name: "M3M",
+    location: "Multiple Sectors, Gurgaon",
     type: "High-Rise Living",
     config: "2, 3 & 4 BHK",
     highlight: "Well-established Gurgaon developer delivering quality high-rise residences with strategic locations near NH-8 & Dwarka Expressway.",
