@@ -32,7 +32,7 @@ const CTASection = () => {
               <Phone size={16} />
               <div className="flex flex-col items-center">
                 <span>Speak to an Advisor</span>
-                <span className="text-xs font-normal">+91 9871015096</span>
+                <span className="text-sm font-normal whitespace-nowrap">+91 9871015096</span>
               </div>
             </a>
           </div>
