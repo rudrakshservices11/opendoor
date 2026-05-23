@@ -1,41 +1,82 @@
-import { Phone } from "lucide-react";
+import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const CTASection = () => {
   const { ref, isVisible } = useScrollReveal();
 
+  const benefits = [
+    "Expert guidance backed by 35+ years of legacy",
+    "Proven advisory framework for real estate success",
+    "Integrated Vastu insights for optimal alignment"
+  ];
+
   return (
-    <section id="contact" className="py-24 section-darker relative overflow-hidden">
-      {/* Subtle gold glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
+    <section id="contact" className="py-32 section-darker relative overflow-hidden">
+      {/* Animated gradient background */}
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full bg-primary/10 blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl -z-10" />
 
-      <div ref={ref} className="container mx-auto px-6 max-w-4xl relative z-10">
-        <div className={`reveal ${isVisible ? "visible" : ""} text-center`}>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            Make Your Next Property Decision with{" "}
-            <span className="gold-text">Strategy & Alignment</span>
-          </h2>
-          <p className="text-muted-foreground font-body text-lg mb-2">Don't rely on guesswork.</p>
-          <p className="text-secondary-foreground font-body mb-10">
-            Choose structured advisory backed by corporate discipline, banking expertise, and scientific Vastu insight.
-          </p>
-
-          <div className="flex flex-col gap-4 justify-center items-center mb-16">
-            <a href="tel:+919871015096" className="w-full sm:w-auto gold-gradient text-primary-foreground px-8 py-4 rounded-md font-body font-semibold text-center hover:opacity-90 transition-opacity">
-              Book Your Strategy Call Today
-            </a>
-            <a href="tel:+919871015096" className="w-full sm:w-auto border-2 border-primary text-primary px-8 py-4 rounded-md font-body font-semibold text-center hover:bg-primary hover:text-primary-foreground transition-colors">
-              Schedule a Vastu Consultation
-            </a>
-            <a href="tel:+919871015096" className="w-full sm:w-auto border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold hover:border-primary hover:text-primary transition-colors inline-flex items-center justify-center gap-2">
-              <Phone size={16} />
-              <div className="flex flex-col items-center">
-                <span>Speak to an Advisor</span>
-                <span className="text-sm font-normal whitespace-nowrap">+91 9871015096</span>
-              </div>
-            </a>
+      <div ref={ref} className="container mx-auto px-6 max-w-5xl relative z-10">
+        {/* Header Section */}
+        <div className={`reveal ${isVisible ? "visible" : ""} text-center mb-16`}>
+          <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
+            <span className="text-primary font-body text-sm font-semibold tracking-wide">READY TO DECIDE WITH CONFIDENCE?</span>
           </div>
+          
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 text-foreground">
+            Transform Your Property<br/>
+            <span className="gold-text">Strategy Today</span>
+          </h2>
+          
+          <p className="text-secondary-foreground font-body text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
+            Let our expert advisors combine corporate discipline, banking expertise, and scientific Vastu insight to guide your next investment decision.
+          </p>
+        </div>
+
+        {/* Benefits Grid */}
+        <div className={`reveal ${isVisible ? "visible" : ""} grid md:grid-cols-3 gap-6 mb-16`}>
+          {benefits.map((benefit, i) => (
+            <div key={i} className="flex gap-3 p-4 rounded-lg bg-primary-foreground/5 border border-border/50 hover:border-primary/30 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              <span className="font-body text-sm text-secondary-foreground">{benefit}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Buttons */}
+        <div className={`reveal ${isVisible ? "visible" : ""} flex flex-col sm:flex-row gap-6 justify-center mb-12`}>
+          <a 
+            href="tel:+919871015096" 
+            className="group flex items-center justify-center gap-3 gold-gradient text-primary-foreground px-8 py-4 rounded-lg font-body font-semibold text-base hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+          >
+            <Phone size={18} />
+            Call Now
+            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+          
+          <a 
+            href="tel:+919871015096" 
+            className="group flex items-center justify-center gap-3 border-2 border-primary text-primary px-8 py-4 rounded-lg font-body font-semibold text-base hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            Schedule Consultation
+            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+
+        {/* Direct Contact Card */}
+        <div className={`reveal ${isVisible ? "visible" : ""} bg-gradient-to-r from-primary-foreground/[0.08] to-primary-foreground/[0.02] border border-primary/20 rounded-2xl p-8 text-center`}>
+          <p className="text-secondary-foreground font-body text-sm mb-4">Or reach us directly</p>
+          <a 
+            href="tel:+919871015096"
+            className="inline-flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
+          >
+            <Phone size={24} className="text-primary" />
+            <div className="flex flex-col items-start">
+              <span className="font-heading font-bold text-2xl group-hover:text-primary transition-colors">+91 9871015096</span>
+              <span className="font-body text-xs text-muted-foreground">Available 9 AM - 6 PM, Monday - Friday</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
