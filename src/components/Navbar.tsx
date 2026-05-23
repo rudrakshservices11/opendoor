@@ -30,7 +30,10 @@ const Navbar = () => {
           ))}
           <a href="tel:+919871015096" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-semibold hover:bg-gold-light transition-colors">
             <Phone size={14} />
-            Contact Us
+            <div className="flex flex-col items-start">
+              <span className="text-sm">Call Now</span>
+              <span className="text-xs font-bold">+91 9871015096</span>
+            </div>
           </a>
         </div>
 
@@ -64,7 +67,10 @@ const Navbar = () => {
               onClick={() => setOpen(false)}
             >
               <Phone size={14} />
-              Contact Us
+              <div className="flex flex-col items-start">
+                <span>Call Now</span>
+                <span className="text-xs font-bold">+91 9871015096</span>
+              </div>
             </a>
           </div>
         </div>

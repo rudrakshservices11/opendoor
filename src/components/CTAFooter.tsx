@@ -30,7 +30,10 @@ const CTASection = () => {
             </a>
             <a href="tel:+919871015096" className="w-full sm:w-auto border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold hover:border-primary hover:text-primary transition-colors inline-flex items-center justify-center gap-2">
               <Phone size={16} />
-              Speak to an Advisor
+              <div className="flex flex-col items-start">
+                <span>Speak to an Advisor</span>
+                <span className="text-xs font-bold">+91 9871015096</span>
+              </div>
             </a>
           </div>
         </div>
