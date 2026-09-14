@@ -1,4 +1,4 @@
-import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Phone, ArrowRight, CheckCircle2, MapPin } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -77,6 +77,13 @@ const CTASection = () => {
               <span className="font-body text-xs text-muted-foreground">Available 9 AM - 6 PM, Monday - Friday</span>
             </div>
           </a>
+
+          <div className="mt-6 flex items-start justify-center gap-3 text-center">
+            <MapPin size={20} className="mt-0.5 flex-shrink-0 text-primary" />
+            <address className="max-w-xl font-body text-sm not-italic leading-relaxed text-muted-foreground">
+              Office No. 4, Main Sector 84, 85 Road, opposite DPS School, Sector 85, Gurugram, Haryana 122004
+            </address>
+          </div>
         </div>
       </div>
     </section>

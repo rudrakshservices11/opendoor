@@ -1,3 +1,4 @@
+import { MapPin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.png";
 
 const HeroSection = () => {
@@ -36,6 +37,15 @@ const HeroSection = () => {
           </a>
           <a href="#projects" className="border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold text-base hover:border-primary hover:text-primary transition-colors">
             Explore Properties
+          </a>
+          <a
+            href="https://share.google/z3TiVBUJ758Vhh13Y"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center gap-2 border border-border text-foreground px-8 py-4 rounded-md font-body font-semibold text-base hover:border-primary hover:text-primary transition-colors"
+          >
+            <MapPin size={18} />
+            Get Directions
           </a>
         </div>
 
